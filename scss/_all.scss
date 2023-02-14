@@ -1,0 +1,237 @@
+ /*background*/
+ .bgbodyimg{
+    background-image:url(../img/puerto2.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-color: $bgcolor;
+    background-blend-mode:multiply;
+    margin:0;
+    padding: 0;
+    font-family: $fonts;
+    
+ }
+ /*background*/
+ 
+ /*nav bar*/
+ .nav-link{
+    color:$text;
+ }
+ 
+ .navbar{
+    background-color: $bgcolor;
+ }
+ .textnavbar{
+    font-size:10px;
+ }
+ 
+ .nav-link:hover {
+    color: $btcolor;
+    animation: slide 1s ease 0s 1 normal forwards;
+  }
+ 
+ 
+  @keyframes slide {
+     0% {
+         transform: translateY(0);
+     }
+     100% {
+         transform: translateY(3px);
+     }
+ }
+ 
+ 
+ @keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+ 
+  .fadeInAnimated {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+   
+  #second {
+    animation-delay: 1s;
+  }
+ 
+ /*nav bar*/
+ 
+ 
+ 
+ h1{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 50px;
+    letter-spacing: 10px;
+    color: $text;
+    text-shadow: $shadowText;
+    font-weight:$mText;
+    font-size:$bigText;
+ }
+ 
+ h2{
+   @extend h1;
+    margin: 40px;
+    letter-spacing: 5px;
+    font-size: $mdText;
+ }
+ 
+ .divT{
+   width: 100%;
+    height:auto;
+ }
+ 
+ 
+ /*iconos de footer*/
+ .icons{
+    height: 3vh;
+    fill: $text;
+    margin: 1%;
+ }
+ 
+ /*iconos de footer*/
+ 
+ 
+ .row{
+    margin:0;
+    padding:0;
+ }
+ 
+ 
+ .foot{
+    margin:0;
+    padding:0;
+    position: relative;
+      p{color: $text;
+         text-shadow: $shadowText;
+         font-weight: $sText;
+      }
+ }
+ 
+ 
+ /*texto descripción empresa*/
+ .pmain{
+   text-align: center;
+   color:$text;
+   letter-spacing: 1px;
+   margin: 20px 0 20px 0px;
+   font-size: $smText;
+   
+ }
+ 
+ /*tarjetas-servicios*/
+ .card{
+    width: 300px;
+    height: auto;
+    background-color: $bgcolor;
+    background-blend-mode:multiply;
+    justify-content: center;
+    margin-bottom: 3em;
+      img{
+         max-width: 100px;
+         max-height: 100px;
+         padding: 15px;
+         margin: auto;
+         display: flex;      
+      }
+      p{
+         @extend .pmain;
+         font-weight: $sText;
+         font-size: 1em;
+         margin: 0; 
+         padding: 2vh;
+      }
+      .card-body{
+         padding: 2px;
+      }
+ }
+ /*tarjetas servicios*/
+ 
+  
+ /*formulario de contacto*/
+ .container2 {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+ 
+ 
+  #contact {
+    background: $bgcolor;
+    padding: 50px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 $bgcolor, 0 5px 5px 0 $bgcolor;
+  }
+  
+ 
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: $text;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+  }
+  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: $btcolor;
+    color: $text;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 1.5em;
+  }
+  
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px $bgcolor;
+  }
+  
+ 
+ /*formularios de contacto*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
