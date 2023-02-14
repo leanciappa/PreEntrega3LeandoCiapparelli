@@ -7,8 +7,7 @@
     background-attachment: fixed;
     background-color: $bgcolor;
     background-blend-mode:multiply;
-    margin:0;
-    padding: 0;
+    @include spacing(0,0);
     font-family: $fonts;
     
  }
@@ -64,7 +63,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 50px;
+    @include spacing (50px,0);
     letter-spacing: 10px;
     color: $text;
     text-shadow: $shadowText;
@@ -74,7 +73,7 @@
  
  h2{
    @extend h1;
-    margin: 40px;
+    @include spacing (40px,0) ;
     letter-spacing: 5px;
     font-size: $mdText;
  }
@@ -96,15 +95,13 @@
  
  
  .row{
-    margin:0;
-    padding:0;
+   @include spacing (0,0);
  }
  
  
  .foot{
-    margin:0;
-    padding:0;
-    position: relative;
+   @include spacing (0,0);
+   position: relative;
       p{color: $text;
          text-shadow: $shadowText;
          font-weight: $sText;
@@ -117,7 +114,7 @@
    text-align: center;
    color:$text;
    letter-spacing: 1px;
-   margin: 20px 0 20px 0px;
+   @include spacing(20px 0 20px 0px, 0);
    font-size: $smText;
    
  }
@@ -133,19 +130,18 @@
       img{
          max-width: 100px;
          max-height: 100px;
-         padding: 15px;
-         margin: auto;
+         @include spacing(auto, 15px);
          display: flex;      
       }
       p{
          @extend .pmain;
          font-weight: $sText;
          font-size: 1em;
-         margin: 0; 
+         @include spacing(0, 0);
          padding: 2vh;
       }
       .card-body{
-         padding: 2px;
+         @include spacing(0, 2px);
       }
  }
  /*tarjetas servicios*/
@@ -155,13 +151,14 @@
  .container2 {
     max-width: 400px;
     width: 100%;
-    margin: auto;
+    @include spacing(auto, 0);
     position: relative;
   }
  
  
   #contact {
     background: $bgcolor;
+    @include spacing(150px 0, 50px);
     padding: 50px;
     margin: 150px 0;
     box-shadow: 0 0 20px 0 $bgcolor, 0 5px 5px 0 $bgcolor;
@@ -170,9 +167,8 @@
  
   fieldset {
     border: medium none !important;
-    margin: 0 0 10px;
+    @include spacing(0 0 10px, 0);
     min-width: 100%;
-    padding: 0;
     width: 100%;
   }
   
@@ -182,10 +178,9 @@
   #contact input[type="url"],
   #contact textarea {
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid $text;
     background: $text;
-    margin: 0 0 5px;
-    padding: 10px;
+    @include spacing(0 0 5px, 10px);
   }
   
   
@@ -200,8 +195,7 @@
     border: none;
     background: $btcolor;
     color: $text;
-    margin: 0 0 5px;
-    padding: 10px;
+    @include spacing(0 0 5px, 10px);
     font-size: 1.5em;
   }
   

@@ -1,0 +1,4 @@
+@mixin spacing ($outside, $inside){
+    margin: $outside;
+    padding: $inside;
+}
